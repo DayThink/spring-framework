@@ -47,7 +47,7 @@ import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
  * @author Sam Brannen
  * @see org.springframework.test.web.servlet.result.PrintingResultHandlerTests
  */
-@Ignore("Not intended to be executed with the build. Comment out this line to inspect the output manually.")
+//@Ignore("Not intended to be executed with the build. Comment out this line to inspect the output manually.")
 public class PrintingResultHandlerSmokeTests {
 
 	@Test
@@ -76,7 +76,7 @@ public class PrintingResultHandlerSmokeTests {
 		@ResponseBody
 		public String hello(HttpServletResponse response) {
 			response.addCookie(new Cookie("enigma", "42"));
-			return "Hello Response";
+			return "Hello Response by zhengguangguo!";
 		}
 	}
 }
